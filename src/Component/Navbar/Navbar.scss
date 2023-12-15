@@ -1,0 +1,30 @@
+.navbar {
+  position: absolute;
+  color: wheat;
+  z-index: 4;
+  width: 100%;
+  height: 35px;
+
+  top: 10px;
+
+  display: flex;
+
+  .spacer {
+    flex: 1;
+  }
+
+  .auth {
+    color: #d5b263;
+    cursor: pointer;
+    font-size: medium;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .auth-text {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

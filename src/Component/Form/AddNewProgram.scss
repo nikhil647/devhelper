@@ -1,0 +1,14 @@
+.form-flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  .catergory {
+    flex-grow: 1;
+  }
+
+  .language {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+}

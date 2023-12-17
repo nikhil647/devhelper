@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+"use client";
+
+import type { Metadata } from "next";]
 import StyledComponentsRegistry from "../lib/AntdRegistry";
 import Navbar from "@/Component/Navbar/Page";
+import { NextAuthProvider } from "./Provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <NextAuthProvider>
+          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        </NextAuthProvider>
       </body>
     </html>
   );
